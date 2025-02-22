@@ -1,0 +1,68 @@
+from flask import Flask, render_template, request, jsonify
+from gtts import gTTS
+import os
+import random
+
+app = Flask(__name__)
+
+# Simulated disease prediction function
+disease_data = {
+    "fever": "Flu",
+    "cough": "Common Cold",
+    "headache": "Migraine",
+    "chest pain": "Heart Problem"
+}
+
+remedies = {
+    "Flu": "Drink warm fluids and rest.",
+    "Common Cold": "Take honey, lemon tea, and rest.",
+    "Migraine": "Stay in a dark room and take pain relievers.",
+    "Heart Problem": "Seek medical attention immediately."
+}
+
+user_symptoms = []  # Store symptoms temporarily
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+@app.route('/add_symptom', methods=['POST'])
+def add_symptom():
+    data = request.json
+    symptom = data.get("symptom", "").lower()
+    
+    if symptom:
+        user_symptoms.append(symptom)
+        return jsonify({"message": f"Symptom '{symptom}' added."}), 200
+    return jsonify({"error": "Invalid symptom"}), 400
+
+@app.route('/diagnose', methods=['GET'])
+def diagnose():
+    predicted_diseases = set()
+    for symptom in user_symptoms:
+        if symptom in disease_data:
+            predicted_diseases.add(disease_data[symptom])
+
+    if not predicted_diseases:
+        return jsonify({"disease": "Unknown", "remedy": "Consult a doctor."})
+
+    disease = random.choice(list(predicted_diseases))
+    remedy = remedies.get(disease, "No specific remedy available.")
+
+    return jsonify({"disease": disease, "remedy": remedy})
+
+@app.route('/voice_response', methods=['POST'])
+def voice_response():
+    data = request.json
+    text = data.get("text", "")
+
+    if text:
+        tts = gTTS(text=text, lang="en")
+        filename = "static/response.mp3"
+        tts.save(filename)
+        return jsonify({"audio": filename}), 200
+
+    return jsonify({"error": "Invalid text"}), 400
+
+if __name__ == '__main__':
+    app.run(debug=True)
