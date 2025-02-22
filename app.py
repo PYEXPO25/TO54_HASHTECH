@@ -175,8 +175,227 @@ disease_info = {
     "stomach upset": {
          "symptoms": ["stomach pain", "fatigue", "bloating"],
          "remedy": "Adopt a balanced diet, exercise regularly, and consult healthcare providers for guidance."
-    }
+    },
+     "Acne Vulgaris": {
+         "symptoms": ["pimples", "blackheads", "whiteheads", "oily skin"],
+         "remedy": "Use topical retinoids, benzoyl peroxide, and/or antibiotics as needed."
+    },
+    "Cystic Acne": {
+         "symptoms": ["painful, deep cysts", "severe inflammation", "redness"],
+         "remedy": "Consult a dermatologist for isotretinoin therapy and possible drainage."
+    },
+    "Hormonal Acne": {
+         "symptoms": ["breakouts around the chin and jawline", "recurring lesions", "oily skin"],
+         "remedy": "Consider hormonal treatments such as oral contraceptives and anti-androgens."
+    },
+    "Acne Rosacea": {
+         "symptoms": ["persistent facial redness", "papules", "visible blood vessels"],
+         "remedy": "Use topical metronidazole and oral tetracyclines; avoid triggers like spicy food."
+    },
+    "Acne Conglobata": {
+         "symptoms": ["severe, interconnected nodules", "abscesses", "scarring"],
+         "remedy": "Often treated with isotretinoin combined with systemic corticosteroids."
+    },
+    "Acne Mechanica": {
+         "symptoms": ["acne in areas of friction", "papules", "localized inflammation"],
+         "remedy": "Reduce friction (e.g., adjust sports gear) and use appropriate topical treatments."
+    },
+    "Acne Fulminans": {
+         "symptoms": ["sudden onset of painful nodules", "systemic symptoms such as fever"],
+         "remedy": "Requires systemic corticosteroids and isotretinoin under close medical supervision."
+    },
+    "Acne Inversa": {
+         "symptoms": ["deep, painful nodules", "abscesses in axillae or groin"],
+         "remedy": "Often managed with antibiotics, biologics, or surgical interventions."
+    },
+    "Acne Excoriée": {
+         "symptoms": ["excoriated lesions", "inflamed papules", "scarring due to picking"],
+         "remedy": "Focus on gentle skincare, behavioral therapy, and topical treatments to reduce urge to pick."
+    },
+    "Infantile Acne": {
+         "symptoms": ["small papules and pustules on the face of infants"],
+         "remedy": "Usually self-resolving; use gentle cleansers and consult pediatric advice if severe."
+    },
+     
+    "Polycystic Ovary Syndrome (PCOS)": {
+        "symptoms": ["irregular periods", "excess hair growth", "acne", "weight gain"],
+        "remedy": "Lifestyle changes, hormonal therapy, and medications like metformin."
+    },
+    "Endometriosis": {
+        "symptoms": ["pelvic pain", "painful periods", "infertility", "heavy bleeding"],
+        "remedy": "Pain management, hormonal therapy, and surgical intervention if needed."
+    },
+    "Uterine Fibroids": {
+        "symptoms": ["heavy menstrual bleeding", "pelvic pain", "frequent urination"],
+        "remedy": "Medications, hormonal therapy, or surgery depending on severity."
+    },
+    "Pelvic Inflammatory Disease (PID)": {
+        "symptoms": ["lower abdominal pain", "fever", "painful urination", "unusual discharge"],
+        "remedy": "Antibiotic treatment and early detection to prevent complications."
+    },
+    "Cervical Cancer": {
+        "symptoms": ["abnormal bleeding", "pelvic pain", "pain during intercourse"],
+        "remedy": "HPV vaccination, regular screenings, and treatment options like surgery or radiation."
+    },
+    "Ovarian Cysts": {
+        "symptoms": ["bloating", "pelvic pain", "irregular periods", "nausea"],
+        "remedy": "Observation, hormonal therapy, or surgical removal if needed."
+    },
+    "Erectile Dysfunction (ED)": {
+        "symptoms": ["difficulty maintaining an erection", "reduced sexual desire"],
+        "remedy": "Lifestyle changes, medications like sildenafil, or therapy."
+    },
+    "Prostate Cancer": {
+        "symptoms": ["difficulty urinating", "blood in urine", "pelvic discomfort"],
+        "remedy": "Screening, active surveillance, surgery, or radiation therapy."
+    },
+    "Hypogonadism": {
+        "symptoms": ["low testosterone", "fatigue", "loss of muscle mass", "low libido"],
+        "remedy": "Hormone replacement therapy and lifestyle changes."
+    },
+    "Premature Ovarian Failure": {
+        "symptoms": ["irregular or missed periods", "hot flashes", "infertility"],
+        "remedy": "Hormone therapy, lifestyle adjustments, and fertility treatments."
+    },
+    "Sexually Transmitted Infections (STIs)": {
+        "symptoms": ["genital sores", "painful urination", "abnormal discharge"],
+        "remedy": "Antibiotics for bacterial STIs, antiviral medications for viral infections."
+    },
+    "Testicular Cancer": {
+        "symptoms": ["lump in testicle", "swelling", "heaviness in the scrotum"],
+        "remedy": "Surgical removal, chemotherapy, or radiation therapy."
+    },
+    "Infertility": {
+        "symptoms": ["difficulty conceiving", "hormonal imbalances", "irregular periods"],
+        "remedy": "Fertility treatments, lifestyle changes, and medical interventions."
+    },
+    "Vaginitis": {
+        "symptoms": ["vaginal itching", "unusual discharge", "burning sensation"],
+        "remedy": "Antifungal or antibiotic treatment based on cause."
+    },
+    "Menopause": {
+        "symptoms": ["hot flashes", "night sweats", "mood swings", "bone loss"],
+        "remedy": "Hormone therapy, lifestyle adjustments, and dietary changes."
+    },
+    "Varicocele": {
+        "symptoms": ["scrotal pain", "swelling", "infertility"],
+        "remedy": "Pain management or surgical intervention if fertility is affected."
+    },
+    "Hydrocele": {
+        "symptoms": ["painless swelling in the scrotum"],
+        "remedy": "Observation or surgical correction if needed."
+    },
+    "Dyspareunia (Painful Intercourse)": {
+        "symptoms": ["pain during sex", "burning sensation", "vaginal dryness"],
+        "remedy": "Lubricants, pelvic therapy, and hormonal treatments."
+    },
+    "Benign Prostatic Hyperplasia (BPH)": {
+        "symptoms": ["frequent urination", "weak urine stream", "difficulty starting urination"],
+        "remedy": "Medications, lifestyle changes, or surgical procedures."
+    },
+    "Premature Ejaculation": {
+        "symptoms": ["inability to control ejaculation", "distress in sexual activity"],
+        "remedy": "Behavioral therapy, medications, and lifestyle modifications."
+    },
+     "Liver Cirrhosis": {
+        "symptoms": ["fatigue", "jaundice", "swelling in legs and abdomen"],
+        "remedy": "Limit alcohol intake, maintain a healthy diet, and follow medical treatment."
+    },
+    "Hepatitis C": {
+        "symptoms": ["dark urine", "fatigue", "jaundice"],
+        "remedy": "Antiviral medications, avoid alcohol, and follow a healthy lifestyle."
+    },
+    "Fatty Liver Disease": {
+        "symptoms": ["abdominal discomfort", "fatigue", "weight loss"],
+        "remedy": "Exercise regularly, avoid alcohol, and maintain a balanced diet."
+    },
+    "Liver Cancer": {
+        "symptoms": ["unexplained weight loss", "abdominal pain", "jaundice"],
+        "remedy": "Medical consultation, chemotherapy, and possible surgical intervention."
+    },
+    "Autoimmune Hepatitis": {
+        "symptoms": ["jaundice", "joint pain", "abdominal pain"],
+        "remedy": "Steroid therapy and immunosuppressive medications under doctor supervision."
+    },
+    "Wilson's Disease": {
+        "symptoms": ["tremors", "yellowing of skin and eyes", "speech problems"],
+        "remedy": "Copper-chelating agents and dietary modifications."
+    },
+    "Hemochromatosis": {
+        "symptoms": ["joint pain", "fatigue", "diabetes"],
+        "remedy": "Regular blood removal (phlebotomy) and iron-reduction diet."
+
+},
+ "Coronary Artery Disease": {
+        "symptoms": ["chest pain", "shortness of breath", "fatigue"],
+        "remedy": "Maintain a healthy diet, exercise regularly, and take prescribed medications like statins or beta-blockers."
+    },
+    "Heart Attack": {
+        "symptoms": ["chest pain", "left arm pain", "shortness of breath", "nausea"],
+        "remedy": "Seek emergency medical help immediately. Chew an aspirin if recommended by a doctor."
+    },
+    "Heart Failure": {
+        "symptoms": ["shortness of breath", "swelling in legs", "rapid heartbeat"],
+        "remedy": "Reduce salt intake, monitor fluid levels, and take prescribed medications such as diuretics."
+    },
+    "Arrhythmia": {
+        "symptoms": ["irregular heartbeat", "dizziness", "fainting"],
+        "remedy": "Avoid caffeine, manage stress, and follow prescribed medications or procedures like a pacemaker if needed."
+    },
+      "Conjunctivitis": {
+        "symptoms": ["redness", "itchy eyes", "watery discharge"],
+        "remedy": "Use prescribed eye drops, maintain hygiene, and avoid touching eyes."
+    },
+    "Cataracts": {
+        "symptoms": ["blurry vision", "light sensitivity", "difficulty seeing at night"],
+        "remedy": "Wear UV-protective glasses, improve diet, and consider surgery if severe."
+    },
+    "Glaucoma": {
+        "symptoms": ["vision loss", "eye pain", "halo around lights"],
+        "remedy": "Use prescribed eye drops, control eye pressure, and undergo regular check-ups."
+    },
+    "Dry Eye Syndrome": {
+        "symptoms": ["eye irritation", "redness", "blurred vision"],
+        "remedy": "Use artificial tears, avoid dry environments, and blink frequently."
+    },
+    "Macular Degeneration": {
+        "symptoms": ["central vision loss", "blurred vision", "difficulty recognizing faces"],
+        "remedy": "Eat a diet rich in antioxidants, take prescribed medication, and consider laser therapy."
+    },
+    "Diabetic Retinopathy": {
+        "symptoms": ["blurred vision", "dark spots", "vision loss"],
+        "remedy": "Control blood sugar levels, undergo laser treatment, and monitor eye health."
+    },
+    "Retinal Detachment": {
+        "symptoms": ["sudden vision loss", "floaters", "flashes of light"],
+        "remedy": "Seek immediate medical attention, consider laser surgery, and avoid eye strain."
+    },
+   
+    "Keratitis": {
+        "symptoms": ["eye pain", "tearing", "blurry vision"],
+        "remedy": "Use antibiotic or antifungal eye drops, avoid contact lenses, and maintain eye hygiene."
+    },
+    "Amblyopia (Lazy Eye)": {
+        "symptoms": ["poor vision in one eye", "crossed eyes", "depth perception issues"],
+        "remedy": "Use corrective lenses, practice eye exercises, and consider patch therapy."
+    },
+    "Strabismus": {
+        "symptoms": ["crossed eyes", "double vision", "eye misalignment"],
+        "remedy": "Use corrective glasses, perform eye exercises, and consider surgery if necessary."
+    },
+    "Optic Neuritis": {
+        "symptoms": ["sudden vision loss", "eye pain", "color vision issues"],
+        "remedy": "Take prescribed steroids, manage underlying conditions, and rest the eyes."
+    },
+    "Blepharitis": {
+        "symptoms": ["eyelid inflammation", "crusty eyelashes", "itching"],
+        "remedy": "Clean eyelids daily, use warm compresses, and apply antibiotic ointments if needed."
+    },
+
+   
 }
+
+
 
 # Store user symptoms in memory
 user_symptoms = []
@@ -187,7 +406,6 @@ translator = Translator()
 @app.route('/')
 def home():
     return render_template('index.html')
-
 @app.route('/add_symptom', methods=['POST'])
 def add_symptom():
     data = request.json
